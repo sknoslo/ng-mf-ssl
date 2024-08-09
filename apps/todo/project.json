@@ -61,7 +61,10 @@
       "executor": "@nx/angular:dev-server",
       "options": {
         "port": 4201,
-        "publicHost": "http://localhost:4201"
+        "ssl": true,
+        "sslCert": "cert.pem",
+        "sslKey": "cert.key",
+        "publicHost": "https://localhost:4201"
       },
       "configurations": {
         "production": {
@@ -95,6 +98,9 @@
       "options": {
         "buildTarget": "todo:build",
         "port": 4201,
+        "ssl": true,
+        "sslCert": "cert.pem",
+        "sslKey": "cert.key",
         "watch": false
       },
       "configurations": {
